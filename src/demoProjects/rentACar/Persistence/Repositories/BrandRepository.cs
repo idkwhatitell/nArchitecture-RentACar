@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 
 namespace Persistence.Repositories
 {
-    public class BrandRepository : EfRepositoryBase<SomeFeatureEntity, BaseDbContext>, ISomeFeatureEntityRepository
+    public class BrandRepository : EfRepositoryBase<Brand, BaseDbContext>, IBrandRepository
     {
         public BrandRepository(BaseDbContext context) : base(context)
         {
         }
+
     }
 }
